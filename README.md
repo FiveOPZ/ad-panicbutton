@@ -7,8 +7,11 @@
 **Dependencies:**
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
+
 [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
+
 [qb-policejob](https://github.com/qbcore-framework/qb-policejob)
+
 [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
 
 

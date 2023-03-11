@@ -4,7 +4,7 @@
 
 * Integrated with [ps-mdt]([https://github.com/Project-Sloth/ps-mdt](https://github.com/Project-Sloth/ps-dispatch))
 
-**Dependencies:
+** Dependencies:
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
@@ -15,11 +15,11 @@
 
 
 
-**qb-radialmenu/client/main.lua
+** qb-radialmenu/client/main.lua
 
-**Find this local function SetupRadialMenu()
+** Find this local function SetupRadialMenu()
 
-**reaplce it with
+** reaplce it with
 
 ```lua
 local function SetupRadialMenu() 

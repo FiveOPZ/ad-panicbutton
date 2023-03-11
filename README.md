@@ -312,3 +312,11 @@ end)
         ['officerdown'] = "Emergency Panic",
         ['officerdown2'] = "Non-Emergency Panic",
 ```
+
+**ps-dispatch/server/sv_dispatchcodes.lua**
+**find ["officerdown"] and replace with**
+
+```lua
+	["officerdown"] =  {displayCode = '10-13a', description = "Officer Down", radius = 15.0, recipientList = {'police'}, blipSprite = 526, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "panicbutton", offset = "false", blipflash = "false"},
+	["officerdown2"] =  {displayCode = '10-13b', description = "Officer Down", radius = 15.0, recipientList = {'police'}, blipSprite = 526, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "panicbutton", offset = "false", blipflash = "false"},
+```

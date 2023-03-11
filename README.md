@@ -13,13 +13,8 @@
 
 
 
-
-
-**qb-radialmenu/client/main.lua**
-
-**Find this local function SetupRadialMenu()**
-
-**reaplce it with**
+**goto qb-radialmenu/client/main.lua**
+**Find this local function SetupRadialMenu() and replace it with**
 
 ```lua
 local function SetupRadialMenu() 
@@ -55,8 +50,7 @@ local function SetupRadialMenu()
 ```
 
 **qb-radialmenu/config.lua**
-
-**find [police] and replace with**
+**Find [police] and replace with**
 
 ```lua
 ["police"] = {
@@ -206,7 +200,6 @@ local function SetupRadialMenu()
 
 
 **ps-dispatch/client/cl_events.lua**
-
 **Find**
 
 ```lua

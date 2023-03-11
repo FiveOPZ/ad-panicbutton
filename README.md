@@ -304,3 +304,11 @@ RegisterNetEvent("ps-dispatch:client:officerdown2", function ()
     OfficerDown2()
 end)
 ```
+
+**ps-dispatch/locales/locales.lua**
+**find ['officerdown'] and replace with**
+
+```lua
+        ['officerdown'] = "Emergency Panic",
+        ['officerdown2'] = "Non-Emergency Panic",
+```

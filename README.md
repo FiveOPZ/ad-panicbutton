@@ -1,25 +1,28 @@
 # qb-panicbutton
 
-Add 10-13a and 10-13b panic buttons to the pre-existing police job and radial menu
+* Add 10-13a and 10-13b panic buttons to the pre-existing police job and radial menu
 
-**Dependencies:**
+* Integrated with [ps-mdt]([https://github.com/Project-Sloth/ps-mdt](https://github.com/Project-Sloth/ps-dispatch))
 
-https://github.com/qbcore-framework/qb-core
-https://github.com/qbcore-framework/qb-radialmenu
-https://github.com/qbcore-framework/qb-policejob
-https://github.com/Project-Sloth/ps-dispatch
+*Dependencies:
+
+[qb-core](https://github.com/qbcore-framework/qb-core)
+[qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
+[qb-policejob](https://github.com/qbcore-framework/qb-policejob)
+[ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
 
 
 
 
 
-**qb-radialmenu/client/main.lua**
+*qb-radialmenu/client/main.lua
 
-**Find this local function SetupRadialMenu()**
+*Find this local function SetupRadialMenu()
 
-**reaplce it with**
+*reaplce it with
 
-```local function SetupRadialMenu() 
+```lua
+local function SetupRadialMenu() 
      FinalMenuItems = {} 
      if (IsDowned() and IsPoliceOrEMS()) then 
              FinalMenuItems = { 
@@ -48,13 +51,15 @@ https://github.com/Project-Sloth/ps-dispatch
          end 
   
      end 
- end```
+ end
+```
 
 **qb-radialmenu/config.lua**
 
 **find [police] and replace with**
 
-```["police"] = {
+```lua
+["police"] = {
 			{
             id = 'emergencybuttons',
             title = 'Panic Buttons',
@@ -196,14 +201,16 @@ https://github.com/Project-Sloth/ps-dispatch
                 }
             }
         }
-    },```
+    },
+```
 
 
-**ps-dispatch/client/cl_events.lua**
+*ps-dispatch/client/cl_events.lua
 
-**Find**
+*Find
 
-```local function OfficerDown()
+```lua
+local function OfficerDown()
     local plyData = QBCore.Functions.GetPlayerData()
     local currentPos = GetEntityCoords(PlayerPedId())
     local locationInfo = getStreetandZone(currentPos)
@@ -233,11 +240,13 @@ exports('OfficerDown', OfficerDown)
 
 RegisterNetEvent("ps-dispatch:client:officerdown", function ()
     OfficerDown()
-end)```
+end)
+```
 
-**Replace it with:**
+*Replace it with:
 
-```local function OfficerDown()
+```lua
+local function OfficerDown()
     local plyData = QBCore.Functions.GetPlayerData()
     local currentPos = GetEntityCoords(PlayerPedId())
     local locationInfo = getStreetandZone(currentPos)
@@ -297,4 +306,5 @@ exports('OfficerDown2', OfficerDown2)
 
 RegisterNetEvent("ps-dispatch:client:officerdown2", function ()
     OfficerDown2()
-end)```
+end)
+```

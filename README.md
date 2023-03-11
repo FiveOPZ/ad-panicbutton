@@ -4,7 +4,7 @@
 
 * Integrated with [ps-mdt]([https://github.com/Project-Sloth/ps-mdt](https://github.com/Project-Sloth/ps-dispatch))
 
-** Dependencies:
+**Dependencies:**
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 [qb-radialmenu](https://github.com/qbcore-framework/qb-radialmenu)
@@ -15,11 +15,11 @@
 
 
 
-** qb-radialmenu/client/main.lua
+**qb-radialmenu/client/main.lua**
 
-** Find this local function SetupRadialMenu()
+**Find this local function SetupRadialMenu()**
 
-** reaplce it with
+**reaplce it with**
 
 ```lua
 local function SetupRadialMenu() 
@@ -54,9 +54,9 @@ local function SetupRadialMenu()
  end
 ```
 
-**qb-radialmenu/config.lua
+**qb-radialmenu/config.lua**
 
-**find [police] and replace with
+**find [police] and replace with**
 
 ```lua
 ["police"] = {
@@ -205,9 +205,9 @@ local function SetupRadialMenu()
 ```
 
 
-**ps-dispatch/client/cl_events.lua
+**ps-dispatch/client/cl_events.lua**
 
-**Find
+**Find**
 
 ```lua
 local function OfficerDown()
@@ -243,7 +243,7 @@ RegisterNetEvent("ps-dispatch:client:officerdown", function ()
 end)
 ```
 
-**Replace it with:
+**Replace it with:**
 
 ```lua
 local function OfficerDown()

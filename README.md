@@ -320,3 +320,27 @@ end)
 	["officerdown"] =  {displayCode = '10-13a', description = "Officer Down", radius = 15.0, recipientList = {'police'}, blipSprite = 526, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "panicbutton", offset = "false", blipflash = "false"},
 	["officerdown2"] =  {displayCode = '10-13b', description = "Officer Down", radius = 15.0, recipientList = {'police'}, blipSprite = 526, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "panicbutton", offset = "false", blipflash = "false"},
 ```
+
+**qb-policejob/client/main.lua**
+**Line 198 and find**
+
+```lua
+RegisterNetEvent('police:client:SendPoliceEmergencyAlert', function()
+    local Player = QBCore.Functions.GetPlayerData()
+    exports['ps-dispatch']:OfficerDown()
+end)
+```
+
+**replace it with**
+
+```lua
+RegisterNetEvent('police:client:SendPoliceEmergencyAlert', function()
+    local Player = QBCore.Functions.GetPlayerData()
+    exports['ps-dispatch']:OfficerDown()
+end)
+
+RegisterNetEvent('police:client:SendPoliceEmergencyAlert2', function()
+    local Player = QBCore.Functions.GetPlayerData()
+    exports['ps-dispatch']:OfficerDown2()
+end)
+```

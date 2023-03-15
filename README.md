@@ -16,7 +16,7 @@
 
 # Installation
 
-** Make sure you have the dependencies above installed **
+**Make sure you have the dependencies above installed**
 
 **goto qb-radialmenu/client/main.lua**
 **Find this local function SetupRadialMenu() and replace it with**

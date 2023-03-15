@@ -4,7 +4,7 @@
 
 * Integrated with [ps-mdt]([https://github.com/Project-Sloth/ps-mdt](https://github.com/Project-Sloth/ps-dispatch))
 
-**Dependencies:**
+# Dependencies:
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 

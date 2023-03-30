@@ -14,6 +14,10 @@
 
 [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
 
+# Support:
+
+Need support? https://discord.gg/jCTza43
+
 # Installation
 
 **Make sure you have the dependencies above installed**

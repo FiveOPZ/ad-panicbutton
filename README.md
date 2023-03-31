@@ -16,7 +16,7 @@
 
 # Support:
 
-Need support? https://discord.gg/jCTza43
+Need support? Join our **[Discord](https://discord.gg/jCTza43)**
 
 # Installation
 
